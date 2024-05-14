@@ -1,0 +1,80 @@
+name: espressocash
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  #Riverpod
+  flutter_riverpod: ^2.5.1
+  #Riverpod generator
+  riverpod_annotation: ^2.3.5
+  build_runner: ^2.4.9
+  riverpod_generator: ^2.4.0
+  #Utilities for math operations
+  intl: ^0.18.1
+  #Routing system
+  go_router: ^14.0.1
+  #Make Http requests
+  http: ^1.2.1
+  #Generate native splash screen
+  flutter_native_splash: ^2.4.0
+  #Generate icons
+  flutter_launcher_icons: ^0.13.1
+  #Show more lint problems
+  custom_lint: ^0.6.4
+  #Model generator
+  freezed: ^2.5.2
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.9.0
+  #Graphs
+  syncfusion_flutter_charts: ^25.2.3+1
+
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/logo.png"
+  min_sdk_android: 21 
+  web:
+    generate: true
+    image_path: "assets/icons/logo.png"
+    background_color: "#FFFFFF"
+    theme_color: "#FFFFFF"
+  windows:
+    generate: true
+    image_path: "assets/icons/logo.png"
+    icon_size: 48
+  macos:
+    generate: true
+    image_path: "assets/icons/logo.png"
+
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: "assets/icons/logo.png"
+  android: true
+  ios: true
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  #Lint rules
+  flutter_lints: ^3.0.2
+  #Model generator
+  json_serializable: ^6.8.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/icons/
